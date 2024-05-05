@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2></h2>
+      <form>
+        <div class="form-group">
+          <h2>{{ currentQuestion.title }}</h2>
+          <app-math-jax-paragraph [mathString]="'$$' + currentQuestion.equation + '$$'"></app-math-jax-paragraph>
+
+          @for (answer of currentQuestion.answers; track answer) {
+            <div class="form-check">
+              <input id="{{answer}}_id" [value]="answer" [(ngModel)]="userAnswer" type="radio" class="form-control">
+              <label for="{{answer}}_id">{{ answer }}</label>
+            </div>
+          }
+
+          <button class="btn btn-success" (click)="checkAnswer()">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

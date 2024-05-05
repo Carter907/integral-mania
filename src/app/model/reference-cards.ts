@@ -22,6 +22,61 @@ export const referenceCards: TheoremCard[] = [
       '\\int \\sin(x) dx = -\\cos(x) + C',
       '\\int \\cos(x) dx = \\sin(x) + C'
     ]
+  },
+  {
+    title: 'Power Rule of Integration',
+    description: 'The power rule for integration is a fundamental concept in calculus that simplifies the process of finding the indefinite integral of a polynomial function.',
+    equations: [
+      '\\int du = u + C',
+      '\\int k du = ku + C',
+      '\\int u^n du = \\frac{u^{n+1}}{n+1}+C'
+    ]
+  },
+  {
+    title: "Integration by Substitution",
+    description: "if g' is continuous on the interval [a, b] and f is continuous on the range of g(x) = u, then",
+    equations: [
+      "\\int_a^b f(g(x))\\cdot g'(x)dx=\\int_{g(a)}^{g(b)}f(u)du"
+    ]
+  },
+  {
+    title: "Improper Integration",
+    description: "Improper integrals are integrals that are not defined in the standard way. They can have infinite limits of integration or discontinuities within the integration interval.",
+    equations: [
+      "\\int_1^{\\infty} \\frac{1}{x} dx", // Example of an improper integral with one infinite limit of integration
+      "\\lim_{b\\to\\infty} \\int_1^{b} \\frac{1}{x} dx"
+    ]
   }
+  // },
+  // {
+  //   title: '',
+  //   description: '',
+  //   equations: [
+  //
+  //   ]
+  // },
+  // {
+  //   title: '',
+  //   description: '',
+  //   equations: [
+  //
+  //   ]
+  // },
+  // {
+  //   title: '',
+  //   description: '',
+  //   equations: [
+  //
+  //   ]
+  // },
+  // {
+  //   title: '',
+  //   description: '',
+  //   equations: [
+  //
+  //   ]
+  // }
+
+
 
 ];

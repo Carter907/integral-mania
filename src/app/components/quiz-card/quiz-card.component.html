@@ -1,0 +1,10 @@
+<div class="col-md-3">
+  <div class="card h-100">
+    <img [ngSrc]="'assets/quiz-' + quiz.id + '.png'" width="200" height="200" class="card-img-top" alt="Advanced Integration Test" >
+    <div class="card-body">
+      <h5 class="card-title">Advanced Integration Test</h5>
+      <p class="card-text">A challenging test for those looking to improve their integration skills.</p>
+      <a [routerLink]="['/quiz', quiz.id]" class="btn btn-primary">Start Test</a>
+    </div>
+  </div>
+</div>
