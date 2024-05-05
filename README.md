@@ -19,25 +19,16 @@ This website serves as a comprehensive reference for single-variable calculus, w
 
 - A modern web browser (e.g., Chrome, Firefox, Safari)
 - Basic understanding of HTML, CSS, and JavaScript (optional)
-
-### Installation
-
-1. Clone the repository:
-git clone https://github.com/yourusername/single-variable-calculus-integration.git
-
-2. Navigate to the project directory:
-cd single-variable-calculus-integration
-
-3. Open the `index.html` file in your web browser.
-
+  
 ### Running the Website Locally
 
-To run the website locally, you can use a simple HTTP server. If you have Python installed, you can use the following command:
+1. Clone the repository:
+git clone https://github.com/Carter907/integral-mania.git
 
-python -m http.server
+2. Navigate to the project directory:
+cd integral-mania
 
-
-Then, open your web browser and navigate to `http://localhost:8000`.
+3. run `ng serve --open` (`--open` opens your browser)
 
 ## Contributing
 
