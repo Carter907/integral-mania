@@ -1,27 +1,49 @@
-# IntegralTester
+# Integral Mania
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+## Overview
 
-## Development server
+This website serves as a comprehensive reference for single-variable calculus, with a special focus on integration techniques. It aims to help students, educators, and anyone interested in mathematics to deepen their understanding of integration through a variety of resources, including textbooks, online courses, and specific topics in integration.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- **Textbooks**: A list of recommended textbooks for learning single-variable calculus and integration.
+- **Online Courses**: Links to online courses that cover integration techniques in depth.
+- **Specific Topics in Integration**: Detailed sections on various integration techniques and their applications.
+- **Additional Resources**: A collection of additional resources for further learning.
+- **Start Test Section**: A grid of cards showcasing different types of tests you can take to test your integration skills.
+- **About Section**: An introduction to the website and its purpose.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting Started
 
-## Build
+### Prerequisites
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- A modern web browser (e.g., Chrome, Firefox, Safari)
+- Basic understanding of HTML, CSS, and JavaScript (optional)
+  
+### Running the Website Locally
 
-## Running unit tests
+1. Clone the repository:
+git clone https://github.com/Carter907/integral-mania.git
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. Navigate to the project directory:
+cd integral-mania
 
-## Running end-to-end tests
+3. run `ng serve --open` (`--open` opens your browser)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Contributing
 
-## Further help
+Contributions are welcome! If you'd like to contribute, please fork the repository and create a pull request with your changes.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+If you have any questions or suggestions, please feel free to contact us at [your-email@example.com](mailto:your-email@example.com).
+
+## Acknowledgments
+
+- [Bootstrap](https://getbootstrap.com/) for the responsive design and styling.
+- [MIT OpenCourseWare](https://ocw.mit.edu/courses/mathematics/) for the educational resources.
+- [Khan Academy](https://www.khanacademy.org/) for additional learning materials.
