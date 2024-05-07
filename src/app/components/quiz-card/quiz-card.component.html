@@ -1,9 +1,9 @@
-<div class="col-md-3">
-  <div class="card h-100">
-    <img [ngSrc]="'assets/quiz-' + quiz.id + '.png'" width="200" height="200" class="card-img-top" alt="Advanced Integration Test" >
+<div class="col-lg-9">
+  <div class="card ">
+    <img [ngSrc]="'assets/quiz-' + quiz.id + '.png'" width="200" height="200" class="card-img-top" alt="quiz icon" >
     <div class="card-body">
-      <h5 class="card-title">Advanced Integration Test</h5>
-      <p class="card-text">A challenging test for those looking to improve their integration skills.</p>
+      <h5 class="card-title"> {{quiz.title}} </h5>
+      <p class="card-text"> {{quiz.description}} </p>
       <a [routerLink]="['/quiz', quiz.id]" class="btn btn-primary">Start Test</a>
     </div>
   </div>

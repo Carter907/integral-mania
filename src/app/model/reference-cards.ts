@@ -43,8 +43,9 @@ export const referenceCards: TheoremCard[] = [
     title: "Improper Integration",
     description: "Improper integrals are integrals that are not defined in the standard way. They can have infinite limits of integration or discontinuities within the integration interval.",
     equations: [
-      "\\int_1^{\\infty} \\frac{1}{x} dx", // Example of an improper integral with one infinite limit of integration
-      "\\lim_{b\\to\\infty} \\int_1^{b} \\frac{1}{x} dx"
+      "\\int_a^{\\infty} f(x) dx=\\lim_{b\\to\\infty} \\int_a^{b} f(x) dx", // Example of an improper integral with one infinite limit of integration
+      "\\int_{\\infty}^b f(x) dx=\\lim_{a\\to\\infty} \\int_a^{b} f(x) dx",
+
     ]
   }
   // },

@@ -16,9 +16,8 @@ export const integralQuizzes: Quiz[] = [
         ],
         correctAnswer: '\\frac{x^2}{2}+C'
       }
-
     ],
-
+    description: 'Start out small with the Beginner Integral Quiz. This Quiz will probe your knowledge with basic integration techniques.'
   },
   {
     id: 2,
@@ -35,8 +34,7 @@ export const integralQuizzes: Quiz[] = [
         ],
         correctAnswer: '\\ln(x)+C'
       }
-
     ],
-
+    description: 'Challenge yourself with a more academic Integral Quiz. This Quiz will use more advanced integration techniques and requires serious preparation.'
   }
 ]

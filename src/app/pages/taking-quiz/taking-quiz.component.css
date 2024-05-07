@@ -1,0 +1,11 @@
+.button-answer-choice input {
+  height: 90%;
+  width: 2.5%;
+  position: relative;
+}
+.button-answer-choice label app-math-jax-paragraph {
+  position: relative;
+  min-width: 400px;
+  min-height: 75px;
+  max-height: 75px;
+}

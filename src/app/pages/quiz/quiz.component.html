@@ -1,28 +1,10 @@
 <main class="container my-5">
-  <h2>Start Test</h2>
-  <div class="row row-cols-1 row-cols-md-2 g-4">
-    <!-- Card 1: Basic Integration Test -->
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img ngSrc="../../../assets/quiz-1.png" width="200" height="200" class="card-img-top" alt="Basic Integration Test" >
-        <div class="card-body">
-          <h5 class="card-title">Basic Integration Test</h5>
-          <p class="card-text">A test designed for beginners to practice basic integration techniques.</p>
-          <a [routerLink]="['/quiz', 1]" class="btn btn-primary">Start Test</a>
-        </div>
-      </div>
-    </div>
-    <!-- Card 2: Advanced Integration Test -->
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img ngSrc="assets/women_studying.png" width="200" height="200" class="card-img-top" alt="Advanced Integration Test" >
-        <div class="card-body">
-          <h5 class="card-title">Advanced Integration Test</h5>
-          <p class="card-text">A challenging test for those looking to improve their integration skills.</p>
-          <a [routerLink]="['/quiz', 2]" class="btn btn-primary">Start Test</a>
-        </div>
-      </div>
-    </div>
+  <h2>Start Testing Your Knowledge!</h2>
+  <div class="row row-cols-2 py-4">
+
+    @for (quiz of integralQuizzes; track quiz) {
+      <app-quiz-card [quiz]="quiz"></app-quiz-card>
+    }
     <!-- Add more cards as needed -->
   </div>
 </main>

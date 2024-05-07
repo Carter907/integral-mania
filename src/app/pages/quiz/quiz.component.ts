@@ -1,28 +1,27 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {NgOptimizedImage} from "@angular/common";
 import {ActivatedRoute, RouterLink} from '@angular/router'
+import {Quiz} from "../../model/quiz";
+import {integralQuizzes} from "../../model/quizzes";
+import {QuizCardComponent} from "../../components/quiz-card/quiz-card.component";
 
 @Component({
   selector: 'app-quiz',
   standalone: true,
   imports: [
     NgOptimizedImage,
-    RouterLink
+    RouterLink,
+    QuizCardComponent
   ],
   templateUrl: './quiz.component.html',
   styleUrl: './quiz.component.css'
 })
 export class QuizComponent implements OnInit {
 
-  id: number = 0;
 
   ngOnInit(): void {
-    if (this.route.snapshot.params['id']) {
-      this.id = parseInt(this.route.snapshot.params['id']);
-    }
-  }
-  constructor(private route: ActivatedRoute) {
-
   }
 
+
+  protected readonly integralQuizzes = integralQuizzes;
 }

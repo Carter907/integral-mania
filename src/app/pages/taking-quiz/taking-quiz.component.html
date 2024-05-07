@@ -1,20 +1,35 @@
-<div class="container">
+<div class="container py-5">
   <div class="row">
     <div class="col-md-12">
       <h2></h2>
       <form>
         <div class="form-group">
-          <h2>{{ currentQuestion.title }}</h2>
-          <app-math-jax-paragraph [mathString]="'$$' + currentQuestion.equation + '$$'"></app-math-jax-paragraph>
+          <h4>{{ currentQuestion.title }}</h4>
+          <app-math-jax-paragraph class="fs-2"
+                                  [mathString]="'$$' + currentQuestion.equation + '$$'"></app-math-jax-paragraph>
 
-          @for (answer of currentQuestion.answers; track answer) {
-            <div class="form-check">
-              <input id="{{answer}}_id" [value]="answer" [(ngModel)]="userAnswer" type="radio" class="form-control">
-              <label for="{{answer}}_id">{{ answer }}</label>
-            </div>
+          <div class="py-4 row g-4">
+
+            @for (answer of currentQuestion.answers; track answer) {
+
+              <div class="input-group button-answer-choice">
+                <input class="form-check-input center" [value]="answer" [(ngModel)]="userAnswer" type="radio"
+                       name="answer" id="answerChoice_{{answer}}">
+                <label class="form-check-label" for="answerChoice_{{answer}}">
+                  <app-math-jax-paragraph class="form-control btn btn-outline-secondary"
+                                          [mathString]="'$$' + answer + '$$'"></app-math-jax-paragraph>
+                </label>
+              </div>
+
+            }
+
+          </div>
+
+
+          <button class="btn btn-success" (click)="checkAnswer()">Check Answer</button>
+          @if (isCorrect) {
+            <button class="btn btn-primary" (click)="nextQuestion()">Next</button>
           }
-
-          <button class="btn btn-success" (click)="checkAnswer()">Submit</button>
         </div>
       </form>
     </div>
